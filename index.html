@@ -8,28 +8,45 @@
     <h1>Fundamentos JavaScript</h1>
     <script>
 
-        // Ambito global
-        var hola = "hola"
+        // // Ambito global
+        // var hola = "hola"
+        //
+        // if (true) {
+        //     var hola = "hello"
+        // }
+        //
+        // console.log(window) // scope global
+        // console.log(window.hola) // hello
+        //
+        // // Ambito de bloque (no usar var)
+        // let musica = "Rock"
+        //
+        // console.log("Variable musica antes del bloque:", musica) // Rock
+        //
+        // // Esto es un bloque
+        // {
+        //     let musica = "Pop"
+        //     console.log("Variable musica dentro del bloque:", musica) // Pop
+        // }
+        //
+        // console.log("Variable musica despues del bloque:", musica) // Rock
 
-        if (true) {
-            var hola = "hello"
+        const PI = 3.1416 // Constante - no cambia su valor durante la ejecucion
+        console.log(PI)
+
+        const objeto = {
+            nombre: "Jhon",
+            edad: 35
         }
 
-        console.log(window) // scope global
-        console.log(window.hola) // hello
+        const colores = ["blanco", "negro", "azul"]
 
-        // Ambito de bloque (no usar var)
-        let musica = "Rock"
-        console.log("Variable musica antes del bloque:", musica)
+        console.log(objeto, colores)
 
-        // Esto es un bloque
-        {
-            let musica = "Pop"
-            console.log("Variable musica dentro del bloque:", musica)
-        }
+        objeto.correo = "jhonmircha@gmail.com"
+        colores.push("anaranjado")
 
-        console.log("Variable musica despues del bloque:", musica)
-
+        console.log(objeto, colores)
     </script>
 </body>
 </html>
