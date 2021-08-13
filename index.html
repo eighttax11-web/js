@@ -31,22 +31,43 @@
         //
         // console.log("Variable musica despues del bloque:", musica) // Rock
 
-        const PI = 3.1416 // Constante - no cambia su valor durante la ejecucion
-        console.log(PI)
+        // const PI = 3.1416 // Constante - no cambia su valor durante la ejecucion
+        // console.log(PI)
+        //
+        // const objeto = {
+        //     nombre: "Jhon",
+        //     edad: 35
+        // }
+        //
+        // const colores = ["blanco", "negro", "azul"]
+        //
+        // console.log(objeto, colores)
+        //
+        // objeto.correo = "jhonmircha@gmail.com"
+        // colores.push("anaranjado")
+        //
+        // console.log(objeto, colores)
 
-        const objeto = {
-            nombre: "Jhon",
-            edad: 35
-        }
+        // Cadenas de texto aka string
 
-        const colores = ["blanco", "negro", "azul"]
+        let nombre = "Cristian"
+        let apellido = "López"
+        let saludo = new String("hola mundo") // Constructor
+        let lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 
-        console.log(objeto, colores)
+        console.log(nombre, apellido)
+        console.log(saludo)
 
-        objeto.correo = "jhonmircha@gmail.com"
-        colores.push("anaranjado")
+        console.log(nombre.length, apellido.length, saludo.length) // acceder a la propiedad length
 
-        console.log(objeto, colores)
+        console.log(
+            nombre.toUpperCase(),
+            apellido.toLowerCase(),
+            lorem.includes("Lorem"),
+            lorem.includes("Jhon"),
+            lorem.trim(),
+            lorem.split(" ")) // acceder a los metodos
+
     </script>
 </body>
 </html>
