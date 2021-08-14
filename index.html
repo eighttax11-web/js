@@ -26,21 +26,33 @@
         // // Método que cuelga del constructor de Number, por eso se accede de esa forma
         // console.log(c + Number.parseFloat(d))
 
-        /* boolean */
-        let verdadero = true
-        let falso = false
+        // /* boolean */
+        // let verdadero = true
+        // let falso = false
+        //
+        // let v = Boolean(true)
+        // let f = Boolean(false)
+        //
+        // console.log(verdadero, falso, v, f)
+        // console.log(typeof verdadero)
+        //
+        // // Valores que tienden a falso y verdadero
+        // console.log(Boolean(0)) // false
+        // console.log(Boolean(-7)) // true
+        // console.log(Boolean("")) // false
+        // console.log(Boolean("Hi")) //true
 
-        let v = Boolean(true)
-        let f = Boolean(false)
+        /* valores primitivos undefined, null & NaN */
 
-        console.log(verdadero, falso, v, f)
-        console.log(typeof verdadero)
+        let indefinida
+        console.log(indefinida) // undefined - No tiene valor y no se le asigno al momento de inicializar
 
-        // Valores que tienden a falso y verdadero
-        console.log(Boolean(0)) // false
-        console.log(Boolean(-7)) // true
-        console.log(Boolean("")) // false
-        console.log(Boolean("Hi")) //true
+        let nulo = null
+        console.log(nulo) // null - La variable esta vacia pero se le asigno el valor de null intencionalmente
+
+        // NaN - Not a number
+        let noEsUnNumero = "hola" * 3.7;
+        console.log(noEsUnNumero) // NaN
 
     </script>
 </body>
