@@ -8,78 +8,23 @@
     <h1>Fundamentos JavaScript</h1>
     <script>
 
-        // // Ambito global
-        // var hola = "hola"
-        //
-        // if (true) {
-        //     var hola = "hello"
-        // }
-        //
-        // console.log(window) // scope global
-        // console.log(window.hola) // hello
-        //
-        // // Ambito de bloque (no usar var)
-        // let musica = "Rock"
-        //
-        // console.log("Variable musica antes del bloque:", musica) // Rock
-        //
-        // // Esto es un bloque
-        // {
-        //     let musica = "Pop"
-        //     console.log("Variable musica dentro del bloque:", musica) // Pop
-        // }
-        //
-        // console.log("Variable musica despues del bloque:", musica) // Rock
+        /* numeros */
+        let a = 2
+        let b = new Number(1)
+        let c = 7.19
+        let d = "5.6"
 
-        // const PI = 3.1416 // Constante - no cambia su valor durante la ejecucion
-        // console.log(PI)
-        //
-        // const objeto = {
-        //     nombre: "Jhon",
-        //     edad: 35
-        // }
-        //
-        // const colores = ["blanco", "negro", "azul"]
-        //
-        // console.log(objeto, colores)
-        //
-        // objeto.correo = "jhonmircha@gmail.com"
-        // colores.push("anaranjado")
-        //
-        // console.log(objeto, colores)
+        console.log(a, b, c)
+        console.log(c.toFixed(1)) // 7.2
+        console.log(parseInt(c)) // 7
+        console.log(typeof c) // number
+        console.log(a + b)
+        console.log(c + d) // concatenacion
 
-        // Cadenas de texto aka string
+        console.log(c + parseInt(d))
 
-        // let nombre = "Cristian"
-        // let apellido = "López"
-        // let saludo = new String("hola mundo") // Constructor
-        // let lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-        //
-        // console.log(nombre, apellido)
-        // console.log(saludo)
-        //
-        // console.log(nombre.length, apellido.length, saludo.length) // acceder a la propiedad length
-        //
-        // console.log(
-        //     nombre.toUpperCase(),
-        //     apellido.toLowerCase(),
-        //     lorem.includes("Lorem"),
-        //     lorem.includes("Jhon"),
-        //     lorem.trim(),
-        //     lorem.split(" ")) // acceder a los metodos
-
-        let nombre = 'Jhon'
-        let apellido = 'Mircha'
-
-        // Concatenación
-        let saludo = "Hola mi nombre es: " + nombre + " " + apellido
-
-        console.log(saludo)
-
-        // Interpolación de variables
-        let saludo2 = `Hola mi nombre es: ${nombre} ${apellido}` // Template Strings
-
-        console.log(saludo2)
+        // Método que cuelga del constructor de Number, por eso se accede de esa forma
+        console.log(c + Number.parseFloat(d))
     </script>
 </body>
 </html>
