@@ -8,23 +8,40 @@
     <h1>Fundamentos JavaScript</h1>
     <script>
 
-        /* numeros */
-        let a = 2
-        let b = new Number(1)
-        let c = 7.19
-        let d = "5.6"
+        // /* numeros */
+        // let a = 2
+        // let b = new Number(1)
+        // let c = 7.19
+        // let d = "5.6"
+        //
+        // console.log(a, b, c)
+        // console.log(c.toFixed(1)) // 7.2
+        // console.log(parseInt(c)) // 7
+        // console.log(typeof c) // number
+        // console.log(a + b)
+        // console.log(c + d) // concatenacion
+        //
+        // console.log(c + parseInt(d))
+        //
+        // // Método que cuelga del constructor de Number, por eso se accede de esa forma
+        // console.log(c + Number.parseFloat(d))
 
-        console.log(a, b, c)
-        console.log(c.toFixed(1)) // 7.2
-        console.log(parseInt(c)) // 7
-        console.log(typeof c) // number
-        console.log(a + b)
-        console.log(c + d) // concatenacion
+        /* boolean */
+        let verdadero = true
+        let falso = false
 
-        console.log(c + parseInt(d))
+        let v = Boolean(true)
+        let f = Boolean(false)
 
-        // Método que cuelga del constructor de Number, por eso se accede de esa forma
-        console.log(c + Number.parseFloat(d))
+        console.log(verdadero, falso, v, f)
+        console.log(typeof verdadero)
+
+        // Valores que tienden a falso y verdadero
+        console.log(Boolean(0)) // false
+        console.log(Boolean(-7)) // true
+        console.log(Boolean("")) // false
+        console.log(Boolean("Hi")) //true
+
     </script>
 </body>
 </html>
